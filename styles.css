@@ -6,6 +6,8 @@ body {
 }
 
 .container-left {
+    display: flex;
+    flex-direction: column;
     background-image: url(images/angus-gray-nNpxXaoN3og-unsplash.jpg);
     height: 100vh;
     width: calc(100vw * (1/3));
@@ -34,4 +36,14 @@ body {
 #odin-text {
     font-family: Norse-bold, sans-serif;
     font-size: 6rem;
+}
+
+.credit {
+    margin-top: auto;
+    align-self: center;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+a:link {
+    color: rgb(230, 230, 230);
 }
