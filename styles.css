@@ -1,0 +1,11 @@
+
+
+body,
+.logo {
+    display: flex;
+}
+
+.container-left {
+    background-image: url(images/angus-gray-nNpxXaoN3og-unsplash.jpg);
+    height: 100vh;
+}
