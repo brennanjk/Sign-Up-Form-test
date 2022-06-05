@@ -44,6 +44,13 @@ body {
     padding: 10px;
     font-size: 1.1rem;
 }
-a:link {
+a:link, a:visited {
     color: rgb(230, 230, 230);
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: calc(100vw * (2/3));
 }
