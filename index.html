@@ -20,7 +20,7 @@
     <div class="container-right">
       <div class="form-top">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <span style="font-style: italic;">now</span> to get started.<br><br>You <span style="font-style: italic;">know</span> you want to!</div>
       <div class="form-body">
-        <form action="" method="post" class="login-form" id="account-form">
+        <form action="#" method="post" class="login-form" id="account-form">
           
             <div id="form-title">Let's do this!</div>
 
@@ -43,19 +43,20 @@
             
               <div class="form-field">
                 <label for="telNumber">PHONE NUMBER</label>
-                <input type="tel" id="telNumber" name="phoneNumber" required>
+                <input type="tel" id="telNumber" name="phoneNumber" minlength="10" required>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-field">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" minlength="8" required onkeyup="check_pass();">
+                <span id="message"></span>
               </div>
 
               <div class="form-field">
                 <label for="confirmPassword">CONFIRM PASSWORD</label>
-                <input type="password" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required onkeyup="check_pass()">
               </div>
             </div>
         </form>
@@ -67,4 +68,6 @@
     </div>
   </div>
 </body>
+
+<script src="app.js"></script>
 </html>

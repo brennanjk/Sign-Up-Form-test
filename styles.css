@@ -131,3 +131,8 @@ a:link.log-in, a:visited.log-in {
     font-size: 1.1rem;
     text-decoration: none;
 }
+
+#message {
+    letter-spacing: normal;
+    font-family: 'Courier New', Courier, monospace;
+}
