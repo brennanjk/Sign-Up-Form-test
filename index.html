@@ -43,20 +43,24 @@
             
               <div class="form-field">
                 <label for="telNumber">PHONE NUMBER</label>
-                <input type="tel" id="telNumber" name="phoneNumber" minlength="10" required>
+                <input type="tel" id="telNumber" name="phoneNumber" minlength="10" pattern="^[0-9-+\s()]{6,16}" title="Please enter a numeric phone number" required>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-field">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" minlength="8" required onkeyup="check_pass();">
+                <input type="password" id="password" name="password" minlength="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                onkeyup="check_pass();">
                 <span id="message"></span>
               </div>
 
               <div class="form-field">
                 <label for="confirmPassword">CONFIRM PASSWORD</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required onkeyup="check_pass()">
+                <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                onkeyup="check_pass();">
               </div>
             </div>
         </form>
