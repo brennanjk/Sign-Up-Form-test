@@ -2,7 +2,8 @@
 
 body {
     margin: 0px;
-    background-color: rgb(10, 14, 17) ;
+    background-color: rgb(10, 14, 17);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .container {
@@ -59,4 +60,10 @@ a:link, a:visited {
     height: 100vh;
     width: calc(100vw * (3/5));
     background-color: rgb(231, 231, 231);
+}
+
+.form-top {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 130px 90px 65px 50px;
 }
