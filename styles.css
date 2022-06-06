@@ -107,3 +107,26 @@ label {
     width: 250px;
     font-size: 1rem;
 }
+
+.form-bottom {
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(48, 47, 47);
+    padding: 55px 90px 65px 50px;
+}
+
+.form-bottom>button {
+    padding: 15px 65px;
+    background-color: rgb(163, 173, 20);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+a:link.log-in, a:visited.log-in {
+    color: rgb(127, 134, 18);
+    font-size: 1.1rem;
+    text-decoration: none;
+}
